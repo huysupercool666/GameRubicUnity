@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(-sidewayForce * Time.deltaTime,0,0,ForceMode.VelocityChange);
         }
 
-        if(rb.position.y < -1){
+        if(rb.position.y < 85.90){
             FindAnyObjectByType<GameManager>().EndGame();
             
         }
